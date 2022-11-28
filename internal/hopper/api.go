@@ -23,7 +23,7 @@ type Hopper struct {
 func New(apiEndpoint string, accessToken string) (*Hopper, error) {
 	headers := map[string]string{
 		"access-token": accessToken,
-		"deviceId": "",
+		"deviceId":     "0",
 	}
 	client, err := internal.NewClient(apiEndpoint, headers)
 	if err != nil {
